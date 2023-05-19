@@ -55,7 +55,7 @@ body:
         - Refactoring
     validations:
       required: true
-  - type: datetime
+  - type: input
     id: deployment-time
     attributes:
       label: Preferred Deployment Time and Date

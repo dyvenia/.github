@@ -1,10 +1,18 @@
- name: Deployment
+name: Deployment
 description: Deployment issue template
 title: "[Deployment]: "
 labels: ["deployment", "triage"]
 assignees:
   - octocat
 body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Specify the deployment environment
+      placeholder: Development, Staging, Production
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
@@ -16,47 +24,62 @@ body:
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
+      required: true
+  - type: textarea
+    id: short-description
+    attributes:
+      label: Short Description
+      description: Provide a concise summary of the deployment
+      placeholder: Briefly describe the purpose of this deployment
+    validations:
+      required: true
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Change Type
+      description: Specify the type of change being made
+      options:
+        - Hotfix
+        - New Feature
+        - Refactoring
+    validations:
+      required: true
+  - type: datetime
+    id: deployment-time
+    attributes:
+      label: Preferred Deployment Time and Date
+      description: Indicate the desired time and date for the deployment
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe the anticipated impact of the deployment
+      placeholder: Explain the expected consequences of this deployment
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Required Resources
+      description: Specify any specific resources or dependencies needed for the deployment
+      placeholder: List any necessary resources or dependencies
+    validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: rollback-plan
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Rollback Plan
+      description: Outline a plan for reverting the deployment in case of any issues or failures
+      placeholder: Describe the steps to revert the deployment if needed
     validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      required: false
   - type: textarea
-    id: logs
+    id: communication-plan
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Communication Plan
+      description: Define how the deployment will be communicated to stakeholders and team members
+      placeholder: Describe the plan for notifying stakeholders and team members
+    validations:
+      required: false

@@ -91,8 +91,8 @@ body:
     attributes:
       label: Change Tested
       description: Has the change been thoroughly tested?
+    validations:
+      required: true
       options:
         - label: Yes
-          required: true
         - label: No
-          required: true

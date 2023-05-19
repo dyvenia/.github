@@ -3,7 +3,7 @@ description: Deployment issue template
 title: "[Deployment]: "
 labels: ["deployment", "triage"]
 assignees:
-  - octocat
+  - devops
 body:
   - type: dropdown
     id: environment
@@ -70,14 +70,6 @@ body:
       placeholder: Explain the expected consequences of this deployment
     validations:
       required: true
-  - type: textarea
-    id: resources
-    attributes:
-      label: Required Resources
-      description: Specify any specific resources or dependencies needed for the deployment
-      placeholder: List any necessary resources or dependencies
-    validations:
-      required: false
   - type: textarea
     id: rollback-plan
     attributes:

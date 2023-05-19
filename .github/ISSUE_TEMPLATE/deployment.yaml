@@ -86,13 +86,11 @@ body:
       placeholder: Describe the plan for notifying stakeholders and team members
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: change-tested
     attributes:
       label: Change Tested
       description: Has the change been thoroughly tested?
       options:
-        - label: Yes
-          required: false
-        - label: No
-          required: false
+        - Yes
+        - No

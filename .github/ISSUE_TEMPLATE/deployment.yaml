@@ -12,7 +12,7 @@ body:
       description: Specify the deployment environment
       options:
         - Development
-        - Staging
+        - Test
         - Production
     validations:
       required: true

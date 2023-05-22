@@ -3,9 +3,8 @@ description: Deployment issue template
 title: "[Deployment]: "
 labels: ["deployment", "triage"]
 assignees:
-  - devops
-projects:
-  - "DevOps Board"
+  - @dyvenia/devops
+
 body:
   - type: markdown
     attributes:

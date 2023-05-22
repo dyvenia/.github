@@ -4,7 +4,8 @@ title: "[Deployment]: "
 labels: ["deployment", "DevOps Board"]
 assignees:
   - "@dyvenia/devops"
-projects: ["DevOps Board"]
+projects:
+  - "dyvenia/DevOps Board"
 body:
   - type: markdown
     attributes:

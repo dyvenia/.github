@@ -18,8 +18,6 @@ body:
         - labe: "Development"
         - labe: "Test"
         - labe: "Production"
-    validations:
-      required: true
   - type: checkboxes
     id: change-tested
     attributes:

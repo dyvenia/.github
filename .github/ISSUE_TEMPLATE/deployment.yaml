@@ -5,10 +5,10 @@ labels: ["deployment", "triage"]
 assignees:
   - devops
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       Thanks for taking the time to fill out this deployment request!
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this deployment request!
   - type: checkboxes
     id: environment
     attributes:

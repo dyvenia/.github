@@ -5,10 +5,10 @@ labels: ["deployment", "triage"]
 assignees:
   - devops
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this deployment request!
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       Thanks for taking the time to fill out this deployment request!
   - type: checkboxes
     id: environment
     attributes:
@@ -28,11 +28,3 @@ body:
         - label: "In Development environment"
         - label: "In Test environment"
         - label: "Has not been tested"
-  - type: textarea
-    id: short-description
-    attributes:
-      label: Short Description
-      description: Provide a concise summary of the deployment
-      placeholder: Briefly describe the purpose of this deployment
-    validations:
-      required: false

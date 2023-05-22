@@ -1,6 +1,6 @@
 name: Deployment
 description: Deployment issue template
-title: "[Deployment]: "
+title: "[Deployment request]: "
 labels: ["deployment", "DevOps"]
 assignees:
   - "@dyvenia/devops"

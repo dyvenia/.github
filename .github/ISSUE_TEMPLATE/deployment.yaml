@@ -4,6 +4,8 @@ title: "[Deployment]: "
 labels: ["deployment", "triage"]
 assignees:
   - devops
+projects:
+  - "DevOps Board"
 body:
   - type: markdown
     attributes:

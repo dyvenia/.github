@@ -1,11 +1,9 @@
 name: Deployment
 description: Deployment issue template
 title: "[Deployment]: "
-labels: ["deployment", "DevOps Board"]
+labels: ["deployment", "DevOps"]
 assignees:
   - "@dyvenia/devops"
-projects:
-  - "dyvenia/DevOps Board"
 body:
   - type: markdown
     attributes:

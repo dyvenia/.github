@@ -15,9 +15,9 @@ body:
       label: Environment
       description: Specify the deployment environment
       options:
-        - labe: "Development"
-        - labe: "Test"
-        - labe: "Production"
+        - label: "Development"
+        - label: "Test"
+        - label: "Production"
   - type: checkboxes
     id: change-tested
     attributes:

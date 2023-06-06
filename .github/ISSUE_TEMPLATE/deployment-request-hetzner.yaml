@@ -40,7 +40,8 @@ body:
     options:
     # - label: "Development"
     # - label: "Test"
-    - label: "Production"
+    - label: "timeflow-dev"
+    - label: "timeflow-prod"
 - type: checkboxes
   id: change-tested
   attributes:

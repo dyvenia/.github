@@ -16,13 +16,14 @@ body:
     description: Provide any relevant additional information.
   validations:
     required: false
-- type: boolean
+- type: checkboxes
   id: new-environment
   attributes:
-    label: new-environment
+    label: New Environment
     description: Is this a new environment?
-  validations:
-    required: false
+    options:
+    - label: "Yes"
+    - label: "No"
 - type: checkboxes
   id: environment
   attributes:

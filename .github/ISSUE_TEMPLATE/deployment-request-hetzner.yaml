@@ -10,7 +10,9 @@ body:
     value: |
       - Thanks for taking the time to fill out this deployment request!
 
-      - "**Project: DevOps Board**" and "**Milestone**" should be set correctly!
+      - **Project:** [Specify the project name]
+
+      - **Milestone:** [Specify the milestone link here]
 
 - type: textarea
   id: context

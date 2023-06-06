@@ -8,12 +8,15 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thanks for taking the time to fill out this deployment request!
+      - Thanks for taking the time to fill out this deployment request!
+
+      - "Project: DevOps Board" and "Milestone" should be set correctly!
+
 - type: textarea
   id: context
   attributes:
     label: "Context:"
-    description: Provide any relevant additional information (if it is necessary).
+    description: Provide any relevant additional information (if necessary).
   validations:
     required: false
 - type: input

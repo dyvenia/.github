@@ -1,0 +1,44 @@
+name: Deployment Timeflow - Production Environment
+description: Deployment issue template to deploy in Hetzner
+title: "[Deployment request]: "
+labels: ["deployment", "DevOps"]
+assignees:
+- "@dyvenia/devops"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this deployment request!
+- type: textarea
+  id: context
+  attributes:
+    label: Context
+    description: Provide any relevant additional information.
+  validations:
+    required: false
+- type: checkboxes
+  id: environment
+  attributes:
+    label: Environment
+    description: Specify the deployment environment.
+    options:
+    # - label: "Development"
+    # - label: "Test"
+    - label: "Production"
+- type: checkboxes
+  id: change-tested
+  attributes:
+    label: Change Tested
+    description: Has the change been thoroughly tested?
+    options:
+    - label: "Locally"
+    - label: "In the Development environment"
+    - label: "In the Test environment"
+    - label: "Has not been tested"
+- type: textarea
+  id: post-deployment
+  attributes:
+    label: Post-deployment Task
+    description: Are there any post-deployment tasks to be done?
+  validations:
+    required: false

@@ -1,5 +1,5 @@
-name: Deployment Timeflow - Production Environment
-description: Deployment issue template to deploy in Hetzner
+name: Hetzner Deployment - Production Environment
+description: Deployment issue template to deploy timeflow in Hetzner
 title: "[Deployment request]: "
 labels: ["deployment", "DevOps"]
 assignees:
@@ -14,6 +14,13 @@ body:
   attributes:
     label: Context
     description: Provide any relevant additional information.
+  validations:
+    required: false
+- type: boolean
+  id: new-environment
+  attributes:
+    label: new-environment
+    description: Is this a new environment?
   validations:
     required: false
 - type: checkboxes
